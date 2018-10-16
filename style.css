@@ -1,0 +1,18 @@
+/* colors  #fff #e46161 #762c24 */
+
+:root{
+    font-size: 10px;
+}
+
+html body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #aa6d6dff;
+}
+
+article{
+    border: solid 1rem;
+    width: 50%;
+    height: 50%;
+}
