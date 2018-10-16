@@ -19,6 +19,13 @@
     </main>
 
     <script>
+        const scrolls = document.querySelectorAll('.scroll');
+
+        function scrolltoggle(e){
+            this.classList.toggle('active');
+        }
+
+        scrolls.forEach(scroll => scroll.addEventListener("click", scrolltoggle));
     </script>
 </body>
 </html>
