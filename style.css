@@ -25,7 +25,13 @@ article{
 }
 
 article:hover{
+    width: 9rem;
+    transition: all 0.1s ease-out;
+}
+
+article.active{
     width: 50%;
+    transition: all 1s ease-out;
 }
 
 article> .roll{
@@ -40,7 +46,13 @@ article> .roll{
 }
 
 article:hover> .roll{
+    background-position-x: -1rem;
+    transition: all 0.1s ease-out;
+}
+
+article.active> .roll{
     background-position-x: -78rem;
+    transition: all 1s ease-out;
 }
 
 article > img.first{
