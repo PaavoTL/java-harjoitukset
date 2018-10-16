@@ -26,7 +26,7 @@ article{
 
 article:hover{
     width: 9rem;
-    transition: all 0.1s ease-out;
+    transition: all 0.5s ease-out;
 }
 
 article.active{
@@ -47,7 +47,7 @@ article> .roll{
 
 article:hover> .roll{
     background-position-x: -1rem;
-    transition: all 0.1s ease-out;
+    transition: all 0.5s ease-out;
 }
 
 article.active> .roll{
