@@ -45,7 +45,17 @@
             this.classList.toggle('active');
         }
 
+        function deterlength(scroll){
+            console.log(scroll.style);
+            const text = scroll.querySelector('.text-wrapper');
+            console.log(text.innerHTML.length);
+            const tLenght = text.innerHTML.length
+            scroll.style.height = `${tLenght/23}rem`;
+
+        }
+
         scrolls.forEach(scroll => scroll.addEventListener("click", scrolltoggle));
+        scrolls.forEach(scroll => deterlength(scroll));
     </script>
 </body>
 </html>
