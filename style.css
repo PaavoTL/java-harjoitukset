@@ -1,5 +1,6 @@
 /* colors  #fff #e46161 #762c24 */
 
+/* initial setup */
 :root{
     font-size: 10px;
 }
@@ -11,9 +12,27 @@ html body{
     width: 100%;
     background-color: #aa6d6dff;
 }
+/* ------------------------------------------------------------------ */
+/* Header */
 
+header{
+    position: relative;
+    background-color: #ffffff;
+    height:15rem;
+    box-shadow: 0rem 1rem 1rem #762c2455;
+}
 
+div.rope{
+    position: absolute;
+    background-image: url(kuvat/rope.png);
+    background-position-x: 0;
+    bottom: 0;
+    height: 5rem;
+    width: 100%;
+}
 
+/* ------------------------------------------------------------------ */
+/* Article */
 article{
     position: relative;
     margin: 10rem;
@@ -43,6 +62,7 @@ article> .roll{
     border-right: solid 1rem #762c24;
     background-image: url('kuvat/roll-bg.png');
     background-position-x: 0%;
+    box-shadow: inset 0rem -1rem 1rem #762c2455;
 
     transition: all 1s ease-out;
 }
