@@ -7,12 +7,27 @@
     <title>Java Harjoitus</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onresize="deterlength(scrolls)">
     <header>
+        <h1>Rullat</h1>
         <div class="rope"></div>
     </header>
     <nav></nav>
     <main>
+            <article class="scroll">
+                    <div class="text-wrapper">
+                        <h3>Selvitys</h3>
+                        <p>
+                            Tämän sivun javascript muuttaa 
+                            kääröjen kokoa niide sisällön ja 
+                            ruudun leveyden mukaan. 
+                            (vaatii vielä hiomista)
+                        </p>
+                    </div>
+                    <div class="roll"></div>
+                    <div class="knob white"></div>
+                    <div class="knob red"></div>
+                </article>
         <article class="scroll">
             <div class="text-wrapper">
                 <h3>Lorem Ipsum</h3>
@@ -45,17 +60,22 @@
             this.classList.toggle('active');
         }
 
-        function deterlength(scroll){
-            console.log(scroll.style);
-            const text = scroll.querySelector('.text-wrapper');
-            console.log(text.innerHTML.length);
-            const tLenght = text.innerHTML.length
-            scroll.style.height = `${tLenght/23}rem`;
+        function deterlength(scrolls){
+
+            scrolls.forEach(scroll =>{
+                const text = scroll.querySelector('.text-wrapper');
+                const tLenght = text.innerHTML.length*4;
+                const ww = window.innerWidth;  
+                const divi = 13+(tLenght*tLenght)/(ww*500);
+                console.log(tLenght, ww, divi);
+                scroll.style.height = `${divi}rem`;
+            });
 
         }
 
         scrolls.forEach(scroll => scroll.addEventListener("click", scrolltoggle));
-        scrolls.forEach(scroll => deterlength(scroll));
+        deterlength(scrolls);
+        document.addEventListener('change',deterlength(scrolls));
     </script>
 </body>
 </html>
