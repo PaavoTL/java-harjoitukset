@@ -64,9 +64,9 @@
 
             scrolls.forEach(scroll =>{
                 const text = scroll.querySelector('.text-wrapper');
-                const tLenght = text.innerHTML.length*4;
+                const tLenght = text.innerHTML.length*5;
                 const ww = window.innerWidth;  
-                const divi = 13+(tLenght*tLenght)/(ww*500);
+                const divi = 14+(tLenght*tLenght)/(ww*730);
                 console.log(tLenght, ww, divi);
                 scroll.style.height = `${divi}rem`;
             });
