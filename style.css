@@ -62,18 +62,25 @@ article> .roll{
     border-right: solid 1rem #762c24;
     background-image: url('kuvat/roll-bg.png');
     background-position-x: 0%;
-    box-shadow: inset 0rem -1rem 1rem #762c2455;
+    box-shadow: inset 0rem -1rem 1rem #762c2455,
+    0rem 0rem 0rem #762c2455;
 
     transition: all 1s ease-out;
 }
 
 article:hover> .roll{
     background-position-x: -1rem;
-    transition: all 0.5s ease-out;
+    box-shadow: inset 0rem -1rem 1rem #762c2455,
+    1rem 0rem 1rem #762c2455;
+    
+    transition: all 0.5s ease-out;  
 }
 
 article.active> .roll{
     background-position-x: -78rem;
+    box-shadow: inset 0rem -1rem 1rem #762c2455,
+    1rem 0rem 1rem #762c2455;
+    
     transition: all 1s ease-out;
 }
 
@@ -99,13 +106,12 @@ div.knob.red{
     background-color: #e46161;
 }
 
-article > img.first{
-    position: absolute;
-    top:-5.8rem;
-    left:-2rem;
-}
-
-article > img.second{
-    position: absolute;
-    
+article > div.text-wrapper{
+    position:absolute;
+    box-sizing: border-box;
+    top:0;
+    background-color:  green;
+    width: calc(100% - 11rem);
+    height: calc(100% - 2rem);
+    margin:  1rem 1rem 1rem 9rem;
 }
