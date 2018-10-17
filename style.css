@@ -1,6 +1,6 @@
 /* colors  #fff #e46161 #762c24 */
 
-/* initial setup */
+/* ==== Initial setup ==== */
 :root{
     font-size: 10px;
 }
@@ -12,9 +12,44 @@ html body{
     width: 100%;
     background-color: #aa6d6dff;
 }
-/* ------------------------------------------------------------------ */
-/* Header */
+/* ==== Initial setup ==== */
 
+/* ------------------------------------------------------------------ */
+
+/* ==== Fonts ==== */
+h1, h2, h3, h4, h5, h6, p{
+    color: whitesmoke;
+    margin: 0;
+}
+
+h1{
+    font-size: 7.5rem;
+    text-shadow: 0rem 0.7rem 0.5rem #000000;
+}
+h2{
+    font-size: 6.5rem;
+}
+h3{
+    font-size: 5.5rem;
+    text-shadow: 0rem 0.7rem 0.5rem #000000;
+}
+h4{
+    font-size: 4.5rem;
+}
+h5{
+    font-size: 3.5rem;
+}
+h6{
+    font-size: 3rem;
+}
+p{
+    font-size: 2rem;
+}
+/* ==== Fonts ==== */
+
+/* ------------------------------------------------------------------ */
+
+/* ==== Header ==== */
 header{
     position: relative;
     background-color: #ffffff;
@@ -30,9 +65,11 @@ div.rope{
     height: 5rem;
     width: 100%;
 }
+/* ==== Header ==== */
 
 /* ------------------------------------------------------------------ */
-/* Article */
+
+/* ==== Article ==== */
 article{
     position: relative;
     margin: 10rem;
